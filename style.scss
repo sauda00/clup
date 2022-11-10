@@ -1,0 +1,808 @@
+@import "media";
+@import "reset";
+@import "global";
+@import "mixin";
+
+.scroll{
+  overflow: hidden;
+}
+#header {
+  font-family: $font;
+  background: #000;
+  padding: 20px 0;
+
+  .nav {
+    &--red {
+      @include df();
+
+      &__navbar {
+        //@include df();
+        //width: 400px;
+        //margin-left: -100px;
+        a {
+          padding: 0 30px;
+          font-weight: 500;
+          font-size: 14px;
+          color: #9099A3;
+          transition: .4s;
+
+          &:hover {
+            color: #FFFFFF;
+            text-decoration-line: underline;
+            transform: scale(1.1);
+          }
+        }
+      }
+
+      &__drob {
+        display: flex;
+
+        img {
+          padding: 0 30px;
+        }
+
+        &--blue {
+          @include btn;
+        }
+      }
+    }
+  }
+}
+
+#hero {
+  background: url("../img/bg.png") no-repeat center/cover;
+  min-height: 100vh;
+
+  .hero {
+    @include df;
+
+    &--text {
+      h1 {
+        padding-top: 50px;
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 18px;
+        color: #FFFFFF;
+        width: 400px;
+        padding: 20px 0;
+      }
+
+      &__btn {
+        button {
+          @include btn;
+        }
+
+        &--over {
+          @include btn;
+          background: transparent;
+          border: 1px solid #9099A3;
+          color: #9099A3;
+        }
+      }
+    }
+
+    &--told {
+      display: flex;
+      margin-top: -100px;
+
+      h2 {
+        font-weight: 400;
+        font-size: 14px;
+        color: #FFFFFF;
+      }
+
+      ion-icon {
+        color: #9099A3;
+        padding: 0 5px;
+      }
+    }
+  }
+}
+
+#missia {
+  background: #000000;
+  font-family: $font;
+
+  .missia {
+    h1 {
+      padding: 20px 0;
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+    }
+
+    &--long {
+      //width: 1040px;
+      //height: 650px;
+      background: #FFFFFF;
+      border-radius: 15px;
+
+      &__text {
+        @include df;
+
+        &--pool {
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: capitalize;
+            color: #2C3E50;
+            width: 400px;
+            padding: 40px 40px 0 40px;
+          }
+        }
+
+        &--relax {
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            text-transform: capitalize;
+            color: #2C3E50;
+            width: 500px;
+            padding: 20px 0;
+          }
+
+          h2 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #2C3E50;
+            padding: 15px 0;
+            }
+
+          h3 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #2C3E50;
+            line-height: 30px;
+            width: 400px;
+          }
+
+          &--omg {
+            h4 {
+              font-weight: 700;
+              font-size: 14px;
+              color: #2C3E50;
+            }
+
+            img {
+              padding: 0 0 20px 200px;
+            }
+          }
+        }
+      }
+
+    }
+  }
+}
+
+#format {
+  font-family: $font;
+  background: linear-gradient(70deg, black, #15154f);
+
+  .format {
+    h1 {
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+      padding: 50px 0 30px 0;
+    }
+    &--block{
+      &__b1 {
+        margin: 30px 0;
+        @include df;
+      }
+      &__b2 {
+        margin: 30px 0;
+        @include df;
+      }
+      &__b3 {
+        margin: 30px 0;
+        @include df;
+      }
+      &__world {
+        padding: 0 20px 0 20px;
+        width: 500px;
+        height: 300px;
+        background: #FFFFFF;
+        border-radius: 15px;
+
+        h6 {
+          font-weight: 700;
+          font-size: 20px;
+          line-height: 30px;
+          color: #2C3E50;
+          width: 390px;
+        }
+
+        &--two {
+          display: flex;
+          justify-content: space-between;
+
+          h1 {
+            font-weight: 900;
+            font-size: 24px;
+            color: #9099A3;
+            padding: 30px 0;
+          }
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #2C3E50;
+          width: 400px;
+          padding: 10px 0;
+        }
+
+        button {
+          @include btn;
+          margin-left: 280px;
+        }
+      }
+    }
+    h2 {
+      font-weight: 700;
+      font-size: 36px;
+      color: #FFFFFF;
+      padding: 40px 0 15px 0;
+      text-align: center;
+    }
+
+    &--travel {
+      display: flex;
+
+      &__around {
+        padding: 0 30px;
+        width: 600px;
+        height: 400px;
+        background: #FFFFFF;
+        border-radius: 15px;
+
+        &--people {
+          h1 {
+            font-weight: 700;
+            font-size: 20px;
+            color: #000000;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 14px;
+            line-height: 21px;
+            color: #000000;
+            width: 400px;
+            padding: 0 0 30px 0;
+          }
+
+          &__luu {
+            @include df;
+
+            h2 {
+              text-align: start;
+              font-weight: 400;
+              font-size: 14px;
+              line-height: 21px;
+              color: #000000;
+              width: 200px;
+            }
+          }
+        }
+
+        button {
+          background: #1A5CFF;
+          box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+          padding: 10px 170px;
+          border-radius: 15px;
+          font-weight: 900;
+          font-size: 14px;
+          color: #FFFFFF;
+          transition: .4s;
+
+          &:hover {
+            background: transparent;
+            transform: scale(1.1);
+            color: blue;
+          }
+
+          margin: 50px 0 0 50px;
+        }
+      }
+    }
+  }
+}
+
+#dubai {
+  font-family: $font;
+  background: linear-gradient(70deg, black, #15154f,);
+
+  .dubai {
+    h1 {
+      font-weight: 900;
+      font-size: 36px;
+      color: #FFFFFF;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    &--kg {
+      &__milan {
+        @include df;
+
+        h4 {
+          font-weight: 800;
+          font-size: 55px;
+          color: #FFFFFF;
+          padding: 0 10px;
+          animation: lan 1s ease-in-out alternate;
+        }
+
+        @keyframes lan {
+          0% {
+            transform: translateX(-1100px);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+      }
+
+      &__usa {
+        @include df;
+
+        h2 {
+          font-weight: 900;
+          font-size: 36px;
+          color: #FFFFFF;
+          padding: 20px 0;
+          animation: use 1s ease-in-out alternate;
+        }
+
+        @keyframes use {
+          0% {
+            transform: translateX(1000px);
+          }
+          100% {
+            transform: translateX(0);
+          }
+        }
+      }
+
+      &__karaganda {
+        @include df;
+
+        h3 {
+          font-weight: 400;
+          font-size: 24px;
+          color: #FFFFFF;
+          animation: da 1s ease-in-out alternate;
+        }
+
+        @keyframes da {
+          0% {
+            transform: translateY(1000px);
+          }
+          100% {
+            transform: translateY(0);
+          }
+        }
+      }
+
+    }
+
+    &--club {
+      h1 {
+        font-weight: 900;
+        font-size: 36px;
+        color: #FFFFFF;
+        text-align: center;
+      }
+
+      &__art {
+        @include dg;
+        padding: 20px 0;
+
+        &--cart {
+          h3 {
+            font-weight: 900;
+            font-size: 36px;
+            color: #FFFFFF;
+            margin-left: 20px;
+          }
+
+          img {
+            margin-left: 38px;
+          }
+
+          h2 {
+            font-weight: 700;
+            font-size: 14px;
+            color: #FFFFFF;
+            padding: 10px 0;
+          }
+
+          p {
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 18px;
+            color: #FFFFFF;
+            width: 200px;
+          }
+        }
+
+      }
+    }
+  }
+}
+
+#baza {
+  font-family: $font;
+  background: linear-gradient(50deg, black, #141442);
+
+  .baza {
+    &--text {
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 20px 0;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 24px;
+        text-align: center;
+        color: #FFFFFF;
+        width: 800px;
+        margin: 15px 0 0 160px;
+      }
+    }
+
+    &--weather {
+      @include df;
+
+      &__hi {
+        margin: 30px 0;
+        padding: 0 20px;
+        width: 310px;
+        height: 370px;
+        background: #FFFFFF;
+        border-radius: 15px;
+        //&--car{
+        //  width: 350px;
+        //  height: 35px;
+        //  background: #1A5CFF;
+        //  border-radius: 15px 15px 0 0;
+        //  margin: 16px 0px -30px -1px;
+        //  h5{
+        //    text-align: center;
+        //    font-weight: 500;
+        //    font-size: 14px;
+        //    color: #FFFFFF;
+        //  }
+        //}
+        h2 {
+          font-weight: 700;
+          font-size: 16px;
+          color: #2C3E50;
+          padding-top: 10px;
+        }
+
+        &--me {
+          display: flex;
+
+          h3 {
+            font-weight: 700;
+            font-size: 36px;
+            color: #2C3E50;
+            padding: 15px 0;
+          }
+
+          h4 {
+            font-weight: 500;
+            font-size: 16px;
+            text-decoration-line: line-through;
+            color: #9099A3;
+            padding-top: 35px;
+          }
+        }
+
+        &--live {
+          font-weight: 400;
+          font-size: 12px;
+          color: #FFFFFF;
+          background: #9099A3;
+          border-radius: 5px;
+          padding: 10px 15px;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 14px;
+          line-height: 21px;
+          color: #2C3E50;
+          width: 300px;
+          padding: 20px 0;
+        }
+
+        &--rote {
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+          background: #2C3E50;
+          border-radius: 15px;
+          padding: 10px 40px;
+          margin: 70px 0 0 20px;
+          transition: .4s;
+
+          &:hover {
+            background: transparent;
+            transform: scale(1.1);
+            color: #000000;
+          }
+        }
+
+        &--rote3 {
+          display: flex;
+          flex-direction: column;
+          font-weight: 500;
+          font-size: 16px;
+          color: #2C3E50;
+          background: none;
+          border: none;
+          margin-left: 100px;
+        }
+      }
+    }
+
+    &--inputs {
+      @include df;
+
+      &__help {
+        h1 {
+          //margin-top: -50px;
+          font-weight: 700;
+          font-size: 36px;
+          color: #FFFFFF;
+        }
+
+        p {
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 24px;
+          color: #9099A3;
+          width: 400px;
+          padding: 15px 0;
+        }
+      }
+
+      &__number {
+        h2 {
+          font-weight: 400;
+          font-size: 14px;
+          color: #9099A3;
+        }
+
+        input {
+          width: 616px;
+          height: 60px;
+          background: rgba(255, 255, 255, 0.2);
+          border-radius: 15px;
+          margin-bottom: 20px;
+          color: #FFFFFF;
+          padding-left: 20px;
+          border: none;
+        }
+
+        &--face {
+          @include df;
+
+          h3 {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 20px;
+            color: #FFFFFF;
+            width: 300px;
+          }
+
+          button {
+            @include btn;
+          }
+        }
+      }
+    }
+
+  }
+}
+
+#ask {
+  font-family: $font;
+  .ask {
+    @include df;
+    &--draw {
+      h1 {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 54px;
+        color: #FFFFFF;
+        width: 100px;
+      }
+
+      h2 {
+        font-weight: 700;
+        font-size: 144px;
+        color: #1A5CFF;
+      }
+    }
+    &--red {
+      $accent-color: #45ADA8;
+      $text-padding: 25px;
+
+      input.accordion {
+        // Hide checkbox
+        appearance: none;
+        left: -100%;
+        position: absolute;
+        top: -100%;
+
+        // Style the label text
+        & + label {
+          cursor: pointer;
+          font-size: 20px;
+          font-weight: bold;
+          padding-left: $text-padding;
+          color: white;
+
+          // Add the '+' sign
+          span::before {
+            color: $accent-color;
+            content: '\002B';
+            position: absolute;
+            left: 0;
+          }
+        }
+
+        // Hide the article if the checkbox is unchecked
+        & ~ article {
+          height: 0px;
+          opacity: 0;
+          overflow: hidden;
+          padding: 5px;
+          padding-left: $text-padding;
+          transition: height 500ms ease,
+          opacity 500ms ease;
+        }
+
+        &:checked {
+          // Add the 'x' sign to each expanded dropdown item
+          & + label span::before { content: '\00D7';
+
+          color: white}
+
+          // Show the article if the checkbox is checked
+          & ~ article {
+            height: 100%;
+            opacity: 1;
+            color: white;
+          }
+        }
+      }
+
+      // Main content styling
+      main {
+        height: 100%;
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      h1 { font-size: 30px;
+color: white;
+
+      }
+
+      section {
+        border-bottom: 1px solid $accent-color;
+        padding-top: 30px;
+        position: relative;
+
+        &:first-of-type { padding-top: 0; }
+      }
+    }
+  }
+}
+
+#footer {
+  font-family: $font;
+
+  .footer {
+    @include df;
+
+    &--come {
+      h1 {
+        font-weight: 700;
+        font-size: 18px;
+        color: #FFFFFF;
+      }
+
+      a {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #9099A3;
+        margin: 20px 0;
+      }
+
+      p {
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        color: #9099A3;
+        width: 200px;
+        padding: 10px 0;
+      }
+
+      button {
+        @include btn;
+      }
+
+      input {
+        font-weight: 400;
+        font-size: 14px;
+        width: 260px;
+        height: 40px;
+        background: #FFFFFF;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.05);
+        border-radius: 15px;
+        border: none;
+        margin: 15px 0;
+        padding-left: 10px;
+        color: #000000;
+        outline: none;
+      }
+      &__life{
+        display: flex;
+        flex-wrap: wrap;
+        &--icons{
+          Width: 30px;
+          Height: 30px;
+          background: #FFFFFF;
+          border: 2px solid #FFFFFF;
+          border-radius: 50%;
+        }
+      }
+    }
+  }
+
+  .visa {
+    @include df;
+
+    h4 {
+      font-weight: 400;
+      font-size: 10px;
+      color: #9099A3;
+
+      &--master {
+        @include df;
+
+        h4 {
+          font-weight: 400;
+          font-size: 10px;
+          color: #9099A3;
+        }
+
+        img {
+
+        }
+      }
+    }
+  }
+}
