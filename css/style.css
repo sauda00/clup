@@ -186,13 +186,22 @@
 }
 @media (max-width: 420px) {
   #header .nav--red {
-    flex-wrap: wrap;
+    display: none !important;
   }
   #baza .baza--inputs__number--face button {
     padding: 10px 10px !important;
   }
+  #baza .baza--inputs__number--face h3 {
+    width: 227px !important;
+  }
   #dubai .dubai--club__art {
     flex-wrap: wrap;
+  }
+  #format .format--travel__around {
+    width: 315px !important;
+  }
+  #format .format--travel__around--people p {
+    width: 355px;
   }
   #format .format--block__world {
     width: 346px !important;
@@ -316,6 +325,11 @@ button {
 
 body {
   background: linear-gradient(70deg, black, #15154f);
+}
+
+input {
+  border: none;
+  outline: none;
 }
 
 .scroll {
@@ -1023,17 +1037,6 @@ body {
   padding-left: 10px;
   color: #000000;
   outline: none;
-}
-#footer .footer--come__life {
-  display: flex;
-  flex-wrap: wrap;
-}
-#footer .footer--come__life--icons {
-  Width: 30px;
-  Height: 30px;
-  background: #FFFFFF;
-  border: 2px solid #FFFFFF;
-  border-radius: 50%;
 }
 #footer .visa {
   display: flex;
