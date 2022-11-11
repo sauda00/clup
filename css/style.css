@@ -39,6 +39,9 @@
   #baza .baza--text p {
     width: 709px !important;
   }
+  #format .format--travel__around {
+    flex-direction: column;
+  }
   #format .format--block__world {
     width: 404px;
   }
@@ -72,6 +75,9 @@
   #format .format--block__world {
     margin: 15px 15px;
   }
+  #dubai .dubai #dubai .dubai--club__art {
+    flex-wrap: wrap !important;
+  }
   #dubai .dubai--kg__milan {
     flex-wrap: wrap;
   }
@@ -88,6 +94,9 @@
 @media (max-width: 768px) {
   #dubai .dubai--club__art--cart p {
     width: 174px !important;
+  }
+  #footer .footer {
+    flex-wrap: wrap;
   }
 }
 @media (max-width: 650px) {
@@ -165,11 +174,17 @@
   #format .format--travel__around {
     width: 344px !important;
   }
+  #format .format--travel__around--people p {
+    width: 288px !important;
+  }
   #format .format--block__world {
     width: 374px !important;
   }
   #format .format--block button {
     margin-left: 88px !important;
+  }
+  #baza .baza--inputs__number--face {
+    flex-direction: column;
   }
   #baza .baza--inputs__number input {
     width: 369px !important;
@@ -183,16 +198,25 @@
   #hero .hero--told {
     display: none !important;
   }
+  #dubai .dubai--club__art {
+    flex-wrap: wrap;
+  }
+  #header .nav--red {
+    display: none !important;
+  }
 }
 @media (max-width: 420px) {
   #header .nav--red {
     display: none !important;
   }
+  #baza .baza--inputs__number--face {
+    flex-direction: column;
+  }
   #baza .baza--inputs__number--face button {
     padding: 10px 10px !important;
   }
   #baza .baza--inputs__number--face h3 {
-    width: 227px !important;
+    width: 261px !important;
   }
   #dubai .dubai--club__art {
     flex-wrap: wrap;
@@ -206,22 +230,37 @@
   #format .format--block__world {
     width: 346px !important;
   }
+  #format .format--block__world h6 {
+    width: 317px !important;
+  }
+  #format .format--block__world p {
+    width: 307px !important;
+  }
 }
 @media (max-width: 360px) {
+  #format .format--travel button {
+    padding: 10px 53px !important;
+  }
   #format .format--travel__around {
     width: 256px !important;
   }
   #format .format--travel__around button {
     margin: -23px 0 0 -8px !important;
   }
+  #format .format--travel__around--people p {
+    width: 213px !important;
+  }
   #format .format--block__world {
     width: 289px !important;
   }
   #format .format--block__world h6 {
-    width: 350px !important;
+    width: 258px !important;
   }
   #format .format--block p {
     width: 317px !important;
+  }
+  #baza .baza--weather__hi {
+    width: 255px !important;
   }
   #baza .baza--inputs__help p {
     width: 301px !important;
@@ -330,10 +369,6 @@ body {
 input {
   border: none;
   outline: none;
-}
-
-.scroll {
-  overflow: hidden;
 }
 
 #header {
@@ -477,6 +512,9 @@ input {
   width: 400px;
   padding: 40px 40px 0 40px;
 }
+#missia .missia--long__text--relax {
+  width: 500px;
+}
 #missia .missia--long__text--relax p {
   font-weight: 400;
   font-size: 14px;
@@ -498,6 +536,9 @@ input {
   color: #2C3E50;
   line-height: 30px;
   width: 400px;
+}
+#missia .missia--long__text--relax--omg {
+  display: flex;
 }
 #missia .missia--long__text--relax--omg h4 {
   font-weight: 700;
@@ -593,13 +634,15 @@ input {
 }
 #format .format--travel {
   display: flex;
+  align-items: center;
 }
 #format .format--travel__around {
-  padding: 0 30px;
-  width: 600px;
-  height: 400px;
+  display: flex;
   background: #FFFFFF;
   border-radius: 15px;
+}
+#format .format--travel__around--people {
+  margin: 0 20px;
 }
 #format .format--travel__around--people h1 {
   font-weight: 700;
@@ -627,18 +670,17 @@ input {
   color: #000000;
   width: 200px;
 }
-#format .format--travel__around button {
+#format .format--travel__around--people button {
   background: #1A5CFF;
   box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
-  padding: 10px 170px;
+  padding: 10px 160px;
   border-radius: 15px;
   font-weight: 900;
   font-size: 14px;
   color: #FFFFFF;
   transition: 0.4s;
-  margin: 50px 0 0 50px;
 }
-#format .format--travel__around button:hover {
+#format .format--travel__around--people button:hover {
   background: transparent;
   transform: scale(1.1);
   color: blue;
@@ -662,7 +704,7 @@ input {
 }
 #dubai .dubai--kg__milan h4 {
   font-weight: 800;
-  font-size: 55px;
+  font-size: 50px;
   color: #FFFFFF;
   padding: 0 10px;
   animation: lan 1s ease-in-out alternate;
@@ -1037,6 +1079,22 @@ input {
   padding-left: 10px;
   color: #000000;
   outline: none;
+}
+#footer .footer--come__life {
+  display: flex;
+  justify-content: space-between;
+}
+#footer .footer--come__life--icons {
+  Width: 30px;
+  Height: 30px;
+  background: #FFFFFF;
+  border: 2px solid #FFFFFF;
+  border-radius: 50%;
+  margin: 0 4px;
+}
+#footer .footer--come__life--icons ion-icon {
+  padding: 6px 7px;
+  color: black;
 }
 #footer .visa {
   display: flex;

@@ -4,7 +4,7 @@
 @import "mixin";
 
 .scroll{
-  overflow: hidden;
+  //overflow: hidden;
 }
 #header {
   font-family: $font;
@@ -138,6 +138,7 @@
         }
 
         &--relax {
+          width: 500px;
           p {
             font-weight: 400;
             font-size: 14px;
@@ -164,6 +165,7 @@
           }
 
           &--omg {
+            display: flex;
             h4 {
               font-weight: 700;
               font-size: 14px;
@@ -184,7 +186,6 @@
 #format {
   font-family: $font;
   background: linear-gradient(70deg, black, #15154f);
-
   .format {
     h1 {
       font-weight: 700;
@@ -257,15 +258,13 @@
 
     &--travel {
       display: flex;
-
+      align-items: center;
       &__around {
-        padding: 0 30px;
-        width: 600px;
-        height: 400px;
+        display: flex;
         background: #FFFFFF;
         border-radius: 15px;
-
         &--people {
+          margin: 0 20px;
           h1 {
             font-weight: 700;
             font-size: 20px;
@@ -293,25 +292,24 @@
               width: 200px;
             }
           }
-        }
+          button {
+            background: #1A5CFF;
+            box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
+            padding: 10px 160px;
+            border-radius: 15px;
+            font-weight: 900;
+            font-size: 14px;
+            color: #FFFFFF;
+            transition: .4s;
 
-        button {
-          background: #1A5CFF;
-          box-shadow: 0 8px 20px rgba(26, 92, 255, 0.2);
-          padding: 10px 170px;
-          border-radius: 15px;
-          font-weight: 900;
-          font-size: 14px;
-          color: #FFFFFF;
-          transition: .4s;
+            &:hover {
+              background: transparent;
+              transform: scale(1.1);
+              color: blue;
+            }
 
-          &:hover {
-            background: transparent;
-            transform: scale(1.1);
-            color: blue;
           }
 
-          margin: 50px 0 0 50px;
         }
       }
     }
@@ -334,10 +332,9 @@
     &--kg {
       &__milan {
         @include df;
-
         h4 {
           font-weight: 800;
-          font-size: 55px;
+          font-size: 50px;
           color: #FFFFFF;
           padding: 0 10px;
           animation: lan 1s ease-in-out alternate;
@@ -768,17 +765,22 @@ color: white;
         color: #000000;
         outline: none;
       }
-      //&__life{
-      //  display: flex;
-      //  flex-wrap: wrap;
-      //  &--icons{
-      //    Width: 30px;
-      //    Height: 30px;
-      //    background: #FFFFFF;
-      //    border: 2px solid #FFFFFF;
-      //    border-radius: 50%;
-      //  }
-      //}
+      &__life{
+        display: flex;
+        justify-content: space-between;
+        &--icons{
+          Width: 30px;
+          Height: 30px;
+          background: #FFFFFF;
+          border: 2px solid #FFFFFF;
+          border-radius: 50%;
+          margin: 0 4px;
+          ion-icon{
+            padding: 6px 7px;
+            color: black;
+          }
+        }
+      }
     }
   }
 

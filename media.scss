@@ -96,6 +96,12 @@
   }
   #format {
     .format {
+      &--travel{
+        &__around {
+          flex-direction: column;
+        }
+
+      }
       &--block {
         &__world {
           width: 404px;
@@ -139,7 +145,6 @@
   }
   #format {
     .format {
-
       &--block {
         &__b1 {
           flex-direction: column;
@@ -162,6 +167,15 @@
   }
   #dubai {
     .dubai {
+      #dubai{
+        .dubai{
+          &--club__art {
+            flex-wrap: wrap !important;
+          }
+        }
+
+      }
+
       &--kg {
         &__milan {
           flex-wrap: wrap;
@@ -201,6 +215,11 @@
           }
         }
       }
+    }
+  }
+  #footer{
+    .footer {
+      flex-wrap: wrap;
     }
   }
 }
@@ -361,6 +380,11 @@
       &--travel{
         &__around {
           width: 344px !important;
+          &--people{
+            p {
+              width: 288px !important;
+            }
+          }
         }
 
       }
@@ -378,6 +402,9 @@
     .baza{
       &--inputs{
         &__number{
+          &--face {
+            flex-direction: column;
+          }
           input {
             width: 369px !important;
           }
@@ -404,6 +431,24 @@
 
     }
   }
+  #dubai{
+    .dubai{
+      &--club{
+        &__art {
+          flex-wrap: wrap;
+        }
+      }
+    }
+  }
+  #header{
+    .nav{
+      &--red {
+        display: none !important  ;
+      }
+
+    }
+  }
+
 }
 
 @media (max-width: 420px) {
@@ -420,11 +465,12 @@
       &--inputs{
         &__number{
           &--face{
+              flex-direction: column;
             button {
               padding: 10px 10px !important;
             }
             h3 {
-              width: 227px !important;
+              width: 261px !important;
             }
           }
         }
@@ -449,7 +495,6 @@
             p {
               width: 355px;
             }
-
           }
         }
 
@@ -457,6 +502,12 @@
       &--block{
        &__world {
           width: 346px !important;
+         h6 {
+           width: 317px !important;
+         }
+          p {
+           width: 307px !important;
+         }
         }
       }
     }
@@ -467,10 +518,18 @@
   #format{
     .format{
       &--travel{
+         button {
+          padding: 10px 53px !important;
+        }
         &__around {
           width: 256px !important;
           button {
             margin: -23px 0 0 -8px !important;
+          }
+          &--people{
+            p {
+              width: 213px !important;
+            }
           }
         }
       }
@@ -478,7 +537,7 @@
         &__world {
           width: 289px !important;
            h6 {
-              width: 350px !important;
+            width: 258px !important;
           }
         }
         p {
@@ -489,6 +548,11 @@
   }
   #baza{
     .baza{
+      &--weather{
+        &__hi {
+          width: 255px !important;
+        }
+      }
       &--inputs{
         &__help{
           p {
